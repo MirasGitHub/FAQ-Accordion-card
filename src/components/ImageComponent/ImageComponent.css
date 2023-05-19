@@ -1,0 +1,49 @@
+.imgContainer {
+	display: block;
+	width: 540px;
+	height: 499px;
+	background-image: url("../../assets/bg-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	background-position: 140% 67%;
+}
+.desktop-img {
+	background-image: url("../../assets/illustration-woman-online-desktop.svg");
+	display: block;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: -120% center;
+}
+
+.box-img {
+	display: block;
+	position: absolute;
+	width: 90px;
+	height: 106px;
+	left: -95.93px;
+	top: 195.12px;
+}
+
+.mobile-img {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.desktop-img {
+		display: block;
+		background-image: url("../../assets/illustration-woman-online-mobile.svg");
+		height: 200px;
+		background-repeat: no-repeat;
+		transform: translate(0px, -140px);
+	}
+
+	.imgContainer {
+		background-image: url("../../assets/bg-pattern-mobile.svg");
+		background-repeat: no-repeat;
+		width: 240px;
+		height: 100px;
+	}
+
+	.box-img {
+		display: none;
+	}
+}

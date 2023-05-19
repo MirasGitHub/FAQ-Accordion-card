@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+
+.title {
+	font-family: "Kumbh Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 17px;
+	color: #4b4c5f;
+}
+
+#accordionTitleContainer {
+	transition: 0.3s;
+}
+
+.active {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+p {
+	color: #787887;
+	font-family: "Kumbh Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	width: 319px;
+	height: 36px;
+	transform: translateX(-40px);
+}
+
+#accordionTitleContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	width: 350px;
+	height: 35px;
+	border-bottom: 1px solid #e8e8ea;
+	margin-top: 10px;
+	transform: translateX(-40px);
+}
+
+#accordionTitleContainer > div:hover,
+#title:hover {
+	color: #f47b56;
+	cursor: pointer;
+}
+
+.arrow {
+	color: #f47b56;
+}
+
+@media screen and (max-width: 767px) {
+	#accordionTitleContainer,
+	p {
+		width: 278px;
+		transform: none;
+	}
+
+	.accordionItem {
+		transform: translateY(-20px);
+	}
+}
